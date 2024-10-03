@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-image: url('https://example.com/luxury-wedding-background.jpg'); /* Replace with an elegant background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.scroll-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.9);  /* Transparent background */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.wedding-logo {
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.wedding-logo:hover {
+    transform: scale(1.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #870d25;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.count-box {
+    background-color: #870d25;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 120px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.count-box:hover {
+    transform: scale(1.1);
+}
+
+.count-box span {
+    font-size: 2.5em;
+    display: block;
+    font-weight: bold;
+}
+
+/* Wine background for RSVP section */
+.rsvp-section {
+    background-color: #870d25; /* Wine color */
+    color: #fff; /* White text for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rsvp-section p {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin-top: 40px;
+}
+
+.directions {
+    margin: 40px 0;
+    text-align: center; /* Centering the text and button */
+}
+
+.directions h2 {
+    color: #870d25;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.direction-btn {
+    background-color: #870d25;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block; /* Ensures the button respects its padding and remains centered */
+}
+
+.direction-btn:hover {
+    background-color: #ab223f;
+    transform: scale(1.05);
+}
+
+.map-container {
+    margin: 20px auto; /* Centers the map container */
+    border: 3px solid #870d25;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Menu QR Code Section */
+.menu-qr-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.menu-qr-section h2 {
+    font-size: 1.8em;
+    color: #870d25;
+}
+
+.qr-code {
+    max-width: 200px; /* Adjust size as needed */
+    margin: 20px 0;
+    border: 3px solid #870d25;
+    border-radius: 10px;
+}
