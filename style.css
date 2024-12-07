@@ -1,167 +1,130 @@
-/* General Reset */
-* {
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    background-image: url('https://example.com/luxury-wedding-background.jpg'); /* Replace with an elegant background image */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100%;
+    background-color: #fff;
+    color: #4a2b2b;
     overflow-x: hidden;
 }
 
-.scroll-container {
-    max-width: 1200px;
-    margin: 0 auto;
+.header {
+    text-align: center;
+    background-color: #a41930;
+    color: white;
     padding: 30px 20px;
-    background-color: rgba(255, 255, 255, 0.9);  /* Transparent background */
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.logo-container {
-    margin-bottom: 30px;
-}
-
-.wedding-logo {
-    max-width: 300px;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-}
-
-.wedding-logo:hover {
-    transform: scale(1.1);
-}
-
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-header h1 {
-    font-family: 'Alex Brush', cursive;
-    color: #870d25;
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-header p {
-    font-size: 1.4em;
-    margin-bottom: 20px;
-    color: #555;
-}
-
-#countdown {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin: 20px 0;
-    flex-wrap: wrap;
-}
-
-.count-box {
-    background-color: #870d25;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
+.logo {
     width: 120px;
-    margin: 10px;
-    transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
 
-.count-box:hover {
-    transform: scale(1.1);
+.toasting-message {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
+    animation: slide-text 10s infinite linear;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.count-box span {
-    font-size: 2.5em;
-    display: block;
-    font-weight: bold;
+@keyframes slide-text {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-100%); }
 }
 
-/* Wine background for RSVP section */
-.rsvp-section {
-    background-color: #870d25; /* Wine color */
-    color: #fff; /* White text for contrast */
-    padding: 20px;
-    border-radius: 8px;
+.background {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
-    margin-top: 40px;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.rsvp-section p {
-    font-size: 1.2em;
-    font-weight: 600;
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-footer p {
-    font-size: 1.2em;
-    margin-top: 40px;
+.countdown-timer {
+    display: flex;
+    gap: 20px;
+}
+
+.time-unit {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.gallery {
+    padding: 40px 20px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photo-gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .directions {
-    margin: 40px 0;
-    text-align: center; /* Centering the text and button */
-}
-
-.directions h2 {
-    color: #870d25;
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
 .direction-btn {
-    background-color: #870d25;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 8px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a41930;
+    color: white;
     text-decoration: none;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease-in-out;
-    display: inline-block; /* Ensures the button respects its padding and remains centered */
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 .direction-btn:hover {
-    background-color: #ab223f;
-    transform: scale(1.05);
+    background-color: #8f172c;
 }
 
-.map-container {
-    margin: 20px auto; /* Centers the map container */
-    border: 3px solid #870d25;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%;
-    max-width: 600px;
-}
-
-/* Menu QR Code Section */
-.menu-qr-section {
+.menu {
+    padding: 40px 20px;
     text-align: center;
-    margin: 40px 0;
+    background-color: #fdf5f7;
 }
 
-.menu-qr-section h2 {
-    font-size: 1.8em;
-    color: #870d25;
+.barcode {
+    width: 200px;
+    margin-top: 20px;
 }
 
-.qr-code {
-    max-width: 200px; /* Adjust size as needed */
-    margin: 20px 0;
-    border: 3px solid #870d25;
-    border-radius: 10px;
+.rsvp {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    background-color: #a41930;
+    color: white;
+    padding: 20px;
 }
