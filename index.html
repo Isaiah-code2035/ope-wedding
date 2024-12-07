@@ -8,93 +8,117 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <img src="AO LOGO_035822.png" alt="Wedding Logo" class="logo">
-        <div class="names">
-            <h1 class="name">Adekemi Oluwatosin</h1>
-            <p class="ampersand">&</p>
-            <h1 class="name">Opeyemi Eniola</h1>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#countdown">Countdown</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+        <li><a href="#location">Location</a></li>
+    </ul>
+</nav>
+
+<!-- Header Section -->
+<header id="home" class="header">
+    <div class="header-overlay">
+        <div class="logo-and-names">
+            <img src="AO LOGO_035822.png" alt="Wedding Logo" class="logo">
+            <h1>Adekemi & Opeyemi</h1>
+            <p class="date">22nd February, 2025</p>
         </div>
-        <p class="date">22nd February, 2025</p>
-        <div class="divider"></div>
-        <p class="toasting-message">
-            <span>“Two souls, one heart.”</span>
-            <span>“Our love, our forever.”</span>
-            <span>“Together is our favorite place to be.”</span>
-        </p>
-    </header>
+    </div>
+</header>
 
-    <!-- Countdown Section -->
-    <section class="background" style="background-image: url('IMG_8427.jpg');">
-        <div class="overlay">
-            <h2>Countdown to Our Special Day</h2>
-            <div id="countdown-timer" class="countdown-timer">
-                <div class="time-unit">
-                    <span id="days"></span>
-                    <span>Days</span>
-                </div>
-                <div class="time-unit">
-                    <span id="hours"></span>
-                    <span>Hours</span>
-                </div>
-                <div class="time-unit">
-                    <span id="minutes"></span>
-                    <span>Minutes</span>
-                </div>
-                <div class="time-unit">
-                    <span id="seconds"></span>
-                    <span>Seconds</span>
-                </div>
-            </div>
+<!-- Countdown Section -->
+<section id="countdown" class="countdown-section">
+    <h2 class="section-header">Countdown to Our Special Day</h2>
+    <div id="countdown-timer" class="countdown-timer">
+        <div class="time-unit"><span id="days"></span><span>Days</span></div>
+        <div class="time-unit"><span id="hours"></span><span>Hours</span></div>
+        <div class="time-unit"><span id="minutes"></span><span>Minutes</span></div>
+        <div class="time-unit"><span id="seconds"></span><span>Seconds</span></div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about-us" class="about-us">
+    <h2 class="section-header">About Us</h2>
+    <div class="image-carousel">
+        <div class="carousel-track">
+            <img src="IMG_8690.jpg" alt="About Us Image 1">
+            <img src="IMG_8695.jpg" alt="About Us Image 2">
+            <img src="IMG_8700.jpg" alt="About Us Image 3">
+            <img src="IMG_8703.jpg" alt="About Us Image 4">
+
+            <img src="IMG_8427.jpg" alt="About Us Image 5">
+            <img src="IMG_8691.jpg" alt="About Us Image 6">
+            <img src="IMG_8693.jpg" alt="About Us Image 7">
+
+            <img src="IMG_8694.jpg" alt="About Us Image 8">
+
+            <img src="IMG_8702.jpg" alt="About Us Image 9">
+
+            <img src="IMG_8701.jpg" alt="About Us Image 10">
+
+            <img src="IMG_8699.jpg" alt="About Us Image 11">
+
+
+
+            
+
         </div>
-    </section>
+    </div>
+    <p class="about-text">
+        Adekemi and Opeyemi’s journey began beneath a sky lit with hope five years ago. Their love blossomed like the first dawn of spring—gentle, certain, and full of promise.
+    </p>
+    
+    <p class="about-text">
+        Together, they navigated life’s winding paths, turning ordinary days into treasured memories etched in time. With every adventure shared, their souls intertwined a little more, binding them in a tapestry of laughter, understanding, and unwavering trust.
+    </p>
+    
+    <p class="about-text">
+        They became each other's safe haven, where dreams found wings, and challenges became shared conquests. Through seasons of change, they stood resilient—hearts beating in harmony, hands entwined in quiet strength.
+    </p>
+    
+    <p class="about-text">
+        What began as a spark flourished into a flame of eternal devotion, lighting their way toward a future built on love, respect, and unbreakable companionship.
+    </p>
+    
+    <p class="about-text">
+        Adekemi and Opeyemi are more than partners—they are kindred spirits whose love story is written in the stars, destined to shine brightly for a lifetime.
+    </p>
+    
+</section>
 
-    <!-- Gallery Section -->
-    <section class="gallery">
-        <h2>Our Memories</h2>
-        <div class="photo-gallery">
-            <div class="photo">
-                <img src="IMG_8690.jpg" alt="Gallery Image 1">
-            </div>
-            <div class="photo">
-                <img src="IMG_8695.jpg" alt="Gallery Image 2">
-            </div>
-            <div class="photo">
-                <img src="IMG_8699.jpg" alt="Gallery Image 3">
-            </div>
-            <div class="photo">
-                <img src="IMG_8700.jpg" alt="Gallery Image 4">
-            </div>
-        </div>
-    </section>
+<!-- Menu Section -->
+<section id="menu" class="menu">
+    <h2 class="section-header">Menu</h2>
+    <p class="menu-text">To get food, scan the barcode below:</p>
+    <img src="barcode.png" alt="Food Menu QR Code" class="barcode">
+</section>
 
-    <!-- Map Section -->
-    <section class="directions">
-        <h2>Join Us at Noble Castle Event Centre</h2>
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.340712675793!2d3.2457765247688453!3d6.595342833209387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d147f555555%3A0x89b937a9e9e1fdf!2sNoble%20Castle%20Event%20Centre!5e0!3m2!1sen!2sng!4v1604499203455!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <a href="https://www.google.com/maps/place/Noble+Castle+Event+Centre,+Isheri,+Lagos/@6.595342,3.245776,15z" target="_blank" class="direction-btn">Get Directions</a>
-    </section>
+<!-- RSVP Section -->
+<section id="rsvp" class="rsvp">
+    <h2 class="section-header">RSVP</h2>
+    <p class="rsvp-text">Femi: +2348109848285<br>Olajide: +2348093577260</p>
+</section>
 
-    <!-- Menu Section -->
-    <section class="menu">
-        <h2>Menu</h2>
-        <p>To get food, scan me:</p>
-        <img src="barcode.png" alt="Food Menu QR Code" class="barcode">
-    </section>
+<!-- Location Section -->
+<section id="location" class="location">
+    <h2 class="section-header">Venue</h2>
+    <p class="location-text">Noble Castle Event Centre, Isheri, Lagos</p>
+    <button class="map-btn" onclick="window.open('https://www.google.com/maps/place/Noble+Castle+Event+Centre,+Isheri,+Lagos/@6.595342,3.245776,15z', '_blank')">
+        Get Directions
+    </button>
+</section>
 
-    <!-- RSVP Section -->
-    <section class="rsvp">
-        <h2>RSVP</h2>
-        <p>Femi: +2348109848285<br>Olajide: +2348093577260</p>
-    </section>
+<footer class="footer">
+    <p>We can't wait to celebrate with you! 💕</p>
+</footer>
 
-    <footer class="footer">
-        <p>We can't wait to celebrate with you! 💕</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

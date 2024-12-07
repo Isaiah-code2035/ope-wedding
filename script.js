@@ -13,12 +13,7 @@ const countdown = () => {
     document.getElementById("hours").textContent = hours;
     document.getElementById("minutes").textContent = minutes;
     document.getElementById("seconds").textContent = seconds;
-
-    if (timeLeft < 0) {
-        clearInterval(timerInterval);
-        document.getElementById("countdown-timer").innerHTML = "The big day is here!";
-    }
 };
 
-const timerInterval = setInterval(countdown, 1000);
+setInterval(countdown, 1000);
 countdown();
