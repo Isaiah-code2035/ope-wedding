@@ -15,9 +15,11 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about-us">About Us</a></li>
         <li><a href="#countdown">Countdown</a></li>
-        <li><a href="#menu">Menu</a></li>
+        <li><a href="#menu-list">Menu List</a></li>
+        <li><a href="#programme">Programme</a></li>
         <li><a href="#rsvp">RSVP</a></li>
         <li><a href="#location">Location</a></li>
+        <li><a href="#upload">Photo Upload</a></li>
     </ul>
 </nav>
 
@@ -48,63 +50,81 @@
     <h2 class="section-header">About Us</h2>
     <div class="image-carousel">
         <div class="carousel-track">
-            <img src="IMG_8690.jpg" alt="About Us Image 1">
-            <img src="IMG_8695.jpg" alt="About Us Image 2">
-            <img src="IMG_8700.jpg" alt="About Us Image 3">
-            <img src="IMG_8703.jpg" alt="About Us Image 4">
-
-            <img src="IMG_8427.jpg" alt="About Us Image 5">
-            <img src="IMG_8691.jpg" alt="About Us Image 6">
-            <img src="IMG_8693.jpg" alt="About Us Image 7">
-
-            <img src="IMG_8694.jpg" alt="About Us Image 8">
-
-            <img src="IMG_8702.jpg" alt="About Us Image 9">
-
-            <img src="IMG_8701.jpg" alt="About Us Image 10">
-
-            <img src="IMG_8699.jpg" alt="About Us Image 11">
-
-
-
-            
-
+            <img src="IMG_8690.jpg" alt="About Us Image 1" loading="lazy">
+            <img src="IMG_8695.jpg" alt="About Us Image 2" loading="lazy">
+            <img src="IMG_8700.jpg" alt="About Us Image 3" loading="lazy">
+            <img src="IMG_8703.jpg" alt="About Us Image 4" loading="lazy">
         </div>
     </div>
     <p class="about-text">
-        Adekemi and Opeyemi’s journey began beneath a sky lit with hope five years ago. Their love blossomed like the first dawn of spring—gentle, certain, and full of promise.
+        Adekemi and Opeyemi’s journey began beneath a sky lit with hope five years ago. Their love blossomed like the first dawn of spring—gentle, certain, and full of promise. Together, they navigated life’s winding paths, turning ordinary days into treasured memories etched in time.
     </p>
-    
-    <p class="about-text">
-        Together, they navigated life’s winding paths, turning ordinary days into treasured memories etched in time. With every adventure shared, their souls intertwined a little more, binding them in a tapestry of laughter, understanding, and unwavering trust.
-    </p>
-    
-    <p class="about-text">
-        They became each other's safe haven, where dreams found wings, and challenges became shared conquests. Through seasons of change, they stood resilient—hearts beating in harmony, hands entwined in quiet strength.
-    </p>
-    
-    <p class="about-text">
-        What began as a spark flourished into a flame of eternal devotion, lighting their way toward a future built on love, respect, and unbreakable companionship.
-    </p>
-    
-    <p class="about-text">
-        Adekemi and Opeyemi are more than partners—they are kindred spirits whose love story is written in the stars, destined to shine brightly for a lifetime.
-    </p>
-    
 </section>
 
-<!-- Menu Section -->
-<section id="menu" class="menu">
-    <h2 class="section-header">Menu</h2>
-    <p class="menu-text">To get food, scan the barcode below:</p>
-    <img src="barcode.png" alt="Food Menu QR Code" class="barcode">
+<!-- Menu List Section -->
+<section id="menu-list" class="menu-list">
+    <h2 class="section-header">Menu List</h2>
+    <div class="menu-grid">
+        <div class="menu-category">
+            <h3>Appetizers</h3>
+            <ul>
+                <li>Spring Rolls</li>
+                <li>Chicken Skewers</li>
+                <li>Vegetable Samosas</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Main Course</h3>
+            <ul>
+                <li>Jollof Rice</li>
+                <li>Fried Rice</li>
+                <li>Grilled Chicken</li>
+                <li>Beef Stroganoff</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Drinks</h3>
+            <ul>
+                <li>Chapman</li>
+                <li>Soft Drinks</li>
+                <li>Wine</li>
+                <li>Water</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Desserts</h3>
+            <ul>
+                <li>Fruit Salad</li>
+                <li>Chocolate Mousse</li>
+                <li>Cheesecake</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
-<!-- RSVP Section -->
-<section id="rsvp" class="rsvp">
-    <h2 class="section-header">RSVP</h2>
-    <p class="rsvp-text">Femi: +2348109848285<br>Olajide: +2348093577260</p>
+<!-- Programme Section -->
+<section id="programme" class="programme">
+    <h2 class="section-header">Programme of the Day</h2>
+    <ul class="programme-list">
+        <li><strong>10:00 AM</strong> - Arrival of Guests</li>
+        <li><strong>11:00 AM</strong> - Wedding Ceremony</li>
+        <li><strong>12:30 PM</strong> - Reception</li>
+        <li><strong>2:00 PM</strong> - Lunch & Toast</li>
+        <li><strong>4:00 PM</strong> - Cake Cutting & Dance</li>
+        <li><strong>6:00 PM</strong> - Closing & Farewell</li>
+    </ul>
 </section>
+
+<!-- Photo Upload Section
+<section id="upload" class="upload-section">
+    <h2 class="section-header">Photo Upload</h2>
+    <form id="photo-upload-form">
+        <label for="file-input" class="custom-file-label">Choose Image</label>
+        <input type="file" id="file-input" accept="image/*" class="custom-file-input" required>
+        <button type="submit" class="upload-btn">Upload Photo</button>
+    </form>
+    <div id="gallery" class="photo-gallery"></div>
+</section> -->
 
 <!-- Location Section -->
 <section id="location" class="location">
@@ -114,6 +134,14 @@
         Get Directions
     </button>
 </section>
+
+
+<!-- RSVP Section -->
+<section id="rsvp" class="rsvp">
+    <h2 class="section-header">RSVP</h2>
+    <p class="rsvp-text">Femi: +2348109848285<br>Olajide: +2348093577260</p>
+</section>
+
 
 <footer class="footer">
     <p>We can't wait to celebrate with you! 💕</p>

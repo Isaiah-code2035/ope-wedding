@@ -17,3 +17,29 @@ const countdown = () => {
 
 setInterval(countdown, 1000);
 countdown();
+
+// Photo Upload Logic
+const form = document.getElementById("photo-upload-form");
+const fileInput = document.getElementById("file-input");
+const gallery = document.getElementById("gallery");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const file = fileInput.files[0];
+
+    if (!file) {
+        alert("Please select a file first.");
+        return;
+    }
+
+    // Simulate File Upload
+    const reader = new FileReader();
+    reader.onload = (event) => {
+        const img = document.createElement("img");
+        img.src = event.target.result;
+        gallery.appendChild(img);
+    };
+    reader.readAsDataURL(file);
+
+    fileInput.value = ""; // Reset the input
+});
