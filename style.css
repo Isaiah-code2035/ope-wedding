@@ -93,6 +93,8 @@ body {
 /* Image Carousel */
 .image-carousel {
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto 10px;
     overflow: hidden;
     position: relative;
     border-radius: 10px;
@@ -105,23 +107,27 @@ body {
 
 .carousel-track img {
     width: 100%;
-    height: 60vh;
+    height: 45vh;
     object-fit: cover;
     border-radius: 10px;
-    opacity: 0;
-    animation: fadeIn 8s ease infinite;
 }
 
-@keyframes fadeSlide {
-    0% { transform: translateX(0%); }
-    25% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    75% { transform: translateX(-300%); }
+/* About Us Section */
+.about-us {
+    padding: 10px 0;
+    text-align: center;
+    background: linear-gradient(to right, #ffebcd, #fdf5f7);
+    border-radius: 10px;
+    margin: 10px 0;
 }
 
-@keyframes fadeIn {
-    0%, 100% { opacity: 0; }
-    25%, 75% { opacity: 1; }
+.about-text {
+    max-width: 800px;
+    margin: 8px auto;
+    padding: 0 15px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #4a2b2b;
 }
 
 /* Menu Section */
@@ -215,6 +221,26 @@ body {
 
     .map-btn {
         width: 80%;
+    }
+
+    .about-us {
+        padding: 8px 0;
+        margin: 8px 0;
+    }
+
+    .image-carousel {
+        margin: 0 auto 8px;
+    }
+
+    .carousel-track img {
+        height: 35vh;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+        padding: 0 12px;
+        margin: 6px auto;
+        line-height: 1.4;
     }
 }
 
@@ -435,6 +461,18 @@ body {
     }
 }
 
+@keyframes fadeSlide {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+}
+
+@keyframes fadeIn {
+    0%, 100% { opacity: 0; }
+    25%, 75% { opacity: 1; }
+}
+
 @media screen and (max-width: 768px) {
     .celebration-message h2 {
         font-size: 2.2rem;
@@ -446,5 +484,143 @@ body {
     
     .celebration-message .time-now {
         font-size: 1rem;
+    }
+}
+
+/* Photo Sharing Section */
+.photo-sharing {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ffebcd 0%, #fdf5f7 100%);
+    border-radius: 10px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-sharing::before {
+    content: '💕';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    opacity: 0.2;
+    animation: float 3s ease-in-out infinite;
+}
+
+.photo-sharing::after {
+    content: '💕';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    opacity: 0.2;
+    animation: float 3s ease-in-out infinite reverse;
+}
+
+.photo-sharing-content {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.photo-sharing-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #a41930;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: glow 2s ease-in-out infinite;
+}
+
+.photo-description {
+    font-size: 1.2rem;
+    color: #4a2b2b;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-upload-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: linear-gradient(45deg, #a41930, #c41d35);
+    color: white;
+    padding: 16px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(164, 25, 48, 0.2);
+    border: 2px solid transparent;
+}
+
+.photo-upload-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(164, 25, 48, 0.3);
+    border-color: #ffebcd;
+}
+
+.camera-icon {
+    font-size: 1.4rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        text-shadow: 2px 2px 8px rgba(164, 25, 48, 0.3);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photo-sharing {
+        padding: 30px 15px;
+    }
+
+    .photo-sharing::before,
+    .photo-sharing::after {
+        font-size: 1.5rem;
+    }
+
+    .photo-sharing-text {
+        font-size: 2rem;
+    }
+
+    .photo-description {
+        font-size: 1.1rem;
+        padding: 0 10px;
+        margin-bottom: 25px;
+    }
+
+    .photo-upload-btn {
+        padding: 14px 30px;
+        font-size: 1.1rem;
     }
 }
